@@ -1,0 +1,473 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: rgb(19, 25, 33);
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.logo-container {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Remove padding */
+}
+.logo {
+    background: url(https://m.media-amazon.com/images/G/15/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB600086176_.png);
+    height: 53px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-position-y: -35px;
+    overflow: hidden;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.border-white {
+    outline: 1px solid transparent;
+    padding: 5px;
+}
+.border-white:hover {
+    outline: 1px solid white;
+}
+.don-ca {
+    margin-top: 0; /* Align vertically */
+    margin-left: 0; /* Remove left margin */
+    align-items: center;
+    display: flex; /* Center align the text vertically */
+}
+.address-container p {
+    padding: 3px;
+    margin: 0;
+    align-items: center;
+
+
+}
+
+
+.address-container {
+ padding: 2px;
+    margin-left: 10px;
+}
+.icon-address{
+    display: flex;
+   
+    align-items: center;
+}
+
+
+.hello{
+    font-size: 0.8rem;
+    padding-left: 20px;
+   
+    color: #ccc;
+}
+.icon-location{
+    margin-right: 7px;
+}
+.search-container{
+ 
+    margin-left: 25px;
+    width: 640px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+   
+
+
+}
+.search-container:hover{
+    outline: 2px solid orange;
+   
+}
+.search-select{
+    width: 50px;
+    border: none;
+   
+}
+.search-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 45px;
+    background-color: rgb(236, 172, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    color: black;
+    height: 100%;
+   
+   
+    border: none;
+    outline: none;
+    padding: 3px;
+}
+
+
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10;
+}
+
+
+.language-container{
+    margin-left: 15px;
+   padding: 7px;
+ align-items: center;
+ display: flex;
+ margin-right: 0;
+}
+.language-container p{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+   
+}
+.language-image{
+width: 30px;
+
+
+}
+.language-image img{
+    width: 75%;
+    margin-left: 5px;
+}
+
+
+.login-container{
+    margin-left: 10px;
+
+
+}
+.login-container p{
+margin: 0;
+}
+.login {
+    margin: 0;
+    padding: 0;
+
+
+}
+.acount{
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+
+.return-order-container{
+    width: 75px;
+margin-left: 5px;
+    font-size: 0.9rem;
+ 
+
+
+}
+.return-order-container p{
+    margin: 0;
+   
+}
+.order{
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    width: 70px;
+   
+}
+.cart-container{
+width: 75px;
+display: flex;
+align-items: center;
+font-size: 1rem;
+padding: 7px;
+
+
+}
+.cart-container img{
+   font-size: 1rem;
+   width: 65px;
+   height: 30px;
+   
+
+
+}
+   .cart-container p{
+    padding: 0;
+    margin: 0;
+   }
+
+
+.menu-bar{
+    background-color: #273535;
+    width: 100%;
+    height: 38px;
+    color: white;
+    display: flex;
+    align-items: center;
+font-size: 18px;
+    padding-left: 11px;
+   font-weight: 500;
+   
+
+
+}
+
+
+
+
+.menu-bar .sidebar-container{
+
+
+   top: 0;
+   bottom: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 10;
+   background-color: rgba(0, 0, 0,0, 0.7);
+    position: fixed;
+  transform: translateX(-100%);
+
+
+}
+.sidebar-navigation{
+    transform: translateX(0%);
+}
+.menu-bar i{
+   margin: 2px;
+   
+}
+
+
+.menu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.menu ul li{
+display: inline-block;
+padding: 2px;
+}
+.menu {
+
+
+    width: 80%;
+  padding: 0;
+  margin: 0;
+ 
+   font-family: "Amazon Ember",Arial,sans-serif;
+}
+.menu a {
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-family: inherit;
+    padding: 6px;
+    font-size: 14px;
+   
+ 
+   
+
+
+}
+.menu a:hover{
+    border: 1px solid white;
+    padding: 5px;
+}
+.promo{
+
+
+height: 30px;
+display: flex;
+
+
+align-items: center;
+padding: 0;
+ 
+ 
+}
+.promo h3{
+   
+    font-size: 16px;
+ 
+  font-weight: 2rem;
+ 
+    margin: 0;
+    padding: 15px;
+}
+.footer-container {
+    width: 100%;
+    background-color: #232F3E;
+    padding: 0;
+    margin-top: 400px;
+    height: 300px;
+}
+
+
+.top {
+    background-color: #4e6075;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.top h3 {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.footer-content {
+    display: flex;
+   
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+
+
+}
+
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    text-align: center; /* Center-align text within each column */
+}
+
+
+/* Optional: Add some basic styling to the headings */
+.footer-column h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-column a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Added overflow hidden */
+}
+
+
+
+
+.image-list {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+
+
+
+.image-item {
+    min-width: 100%;
+    height: 600px;
+}
+
+
+.image-item img{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-btn-container{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+.slider-btn{
+
+
+    border: 1px solid transparent;
+    padding: 100px 20px;
+    font-size: 50px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #000;
+}
+.slider-btn:focus{
+    border-color:seagreen;
+    box-shadow: -2px -2px 2px rgb(230, 227, 227),
+    2px 2px 2px white;
+    margin: 2px;
+}
+
+
+
+
+/*--------------- the slide new css added ----*/
+
+
+
+/*-------------- product card container----*/
+
+.card-product-container{
+    padding: 15px;
+    background-color: red;
+}
+.card-product h2{
+    padding: 0;
+    margin: 0;
+}
+.card-product-nested-card{
+    display: flex;
+ 
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.card-nested img{
+    width: 128px;
+     
+object-fit: cover;
+}
